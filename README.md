@@ -1,4 +1,5 @@
-# MNIST Classification with CI/CD Pipeline
+# MNIST Classification with CI/CD Pipeline [![ML Pipeline](https://github.com/Gokkulnath/GithubActionMLTestingDemo/actions/workflows/ml-pipeline.yml/badge.svg)](https://github.com/Gokkulnath/GithubActionMLTestingDemo/actions/workflows/ml-pipeline.yml)
+
 
 This project implements a lightweight Convolutional Neural Network (CNN) for MNIST digit classification with a complete CI/CD pipeline using GitHub Actions. The model is designed to achieve >95% accuracy in a single epoch while maintaining less than 25,000 parameters.
 
