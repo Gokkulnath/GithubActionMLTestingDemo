@@ -18,7 +18,7 @@ Key features:
 - Training accuracy: >95% in one epoch
 
 ## Project Structure 
-
+```
 .
 ├── .github
 │ └── workflows
@@ -33,7 +33,7 @@ Key features:
 ├── README.md
 ├── requirements.txt
 └── train.py
-
+```
 
 ## Setup and Installation
 
