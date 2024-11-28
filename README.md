@@ -5,14 +5,22 @@ This project implements a lightweight Convolutional Neural Network (CNN) for MNI
 
 ## Model Architecture
 
-The model uses a simple but effective architecture:
-- 2 Convolutional layers with batch normalization
-- Max pooling after each convolution
-- 2 Fully connected layers
-- Dropout for regularization
+The model uses a compact but effective CNN architecture:
+- 4 Convolutional layers with batch normalization and ReLU activation
+- Max pooling layers for dimensionality reduction
+- Single fully connected layer for classification
+- Batch normalization for training stability
+
+Layer details:
+1. Conv2d(1→16, 3×3) + BatchNorm + ReLU
+2. Conv2d(16→32, 3×3) + BatchNorm + ReLU + MaxPool
+3. Conv2d(32→32, 3×3) + BatchNorm + ReLU
+4. Conv2d(32→16, 3×3) + BatchNorm + ReLU + MaxPool
+5. MaxPool
+6. Fully Connected (144→10)
 
 Key features:
-- Input: 28x28 grayscale images
+- Input: 28×28 grayscale images
 - Output: 10 classes (digits 0-9)
 - Parameters: <25,000
 - Training accuracy: >95% in one epoch
